@@ -1,0 +1,461 @@
+/* 首頁樣式 */
+/* 版心 */
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+body {
+  background-color: #f3f5f7;
+}
+
+/* header start */
+.header {
+  height: 100px;
+  background-color: #fff;
+}
+
+.header .wrapper {
+  display: flex;
+  padding-top: 29px;
+}
+
+/* logo */
+.logo {
+  width: 195px;
+  height: 41px;
+  background: url(../images/logo.png);
+  /* 隱藏搜索文字 */
+  font-size: 0;
+}
+
+/* 導航 */
+.nav {
+  margin-left: 102px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav li {
+  margin-right: 24px;
+}
+
+.nav li a {
+  display: block;
+  padding: 6px 8px;
+  line-height: 27px;
+  font-size: 19px;
+}
+
+/* active 表示默認選中的a */
+.nav li .active {
+  border-bottom: 2px solid #00a4ff;
+}
+
+.nav li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: .3s;
+}
+
+/* 搜索 */
+.search {
+  display: flex;
+  margin-left: 64px;
+  padding-left: 19px;
+  padding-right: 20px;
+  width: 412px;
+  height: 40px;
+  background-color: #f3f5f7;
+  border-radius: 20px;
+}
+
+.search input {
+  flex: 1;
+  border: 0;
+  background-color: transparent;
+  /* 取消表單控件的焦點效果 */
+  outline: none;
+}
+
+.search input::placeholder {
+  font-size: 14px;
+  color: #999
+}
+
+.search a {
+  display: flex;
+  align-items: center;
+}
+
+.search a .icon-search {
+  font-size: 16px;
+  color: #00a4ff;
+}
+
+/* 用戶 */
+.user {
+  margin-left: 32px;
+}
+
+.user a {
+  display: flex;
+  align-items: center;
+}
+
+.user a img {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* 裁切圖片讓它剛好填滿圓形 */
+  object-fit: cover;
+}
+
+.user a span {
+  font-size: 16px;
+  color: #666;
+}
+
+/* header end */
+
+/* banner start */
+.banner {
+  height: 420px;
+  background-image: url(../uploads/bannerC.jpg);
+}
+
+.banner .wrapper {
+  /* 子元素左右靠邊 */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 測導航 */
+
+.banner .left {
+  padding: 3px 20px;
+  width: 191px;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner .left a {
+  display: block;
+  height: 46px;
+  background: url(../images/right.png) no-repeat;
+  line-height: 46px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.banner .left li {
+  position: relative;
+  display: flex;
+}
+
+.banner .left span {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.banner .left li:hover a,
+.banner .left li:hover span {
+  color: #00a4ff;
+}
+
+/* 課程表 */
+.banner .right {
+  margin-top: 60px;
+  width: 218px;
+  height: 305px;
+  background-color: #209dd5;
+  border-radius: 10px;
+}
+
+.banner .right h3 {
+  margin-left: 14px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.banner .right .content {
+  padding: 14px;
+  height: 257px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.banner .right dl {
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.banner .right dt {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.banner .right dd {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.banner .right dd span {
+  color: #00a4ff;
+}
+
+.banner .right dd strong {
+  color: #7d7d7d;
+  font-weight: 400;
+}
+
+.banner .right a {
+  display: block;
+  height: 32px;
+  background-color: #00a4ff;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* banner end */
+
+/* recommend start */
+.recommend {
+  display: flex;
+  margin-top: 11px;
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, .5);
+}
+
+.recommend h3 {
+  font-size: 18px;
+  color: #00a4ff;
+  font-weight: 400;
+}
+
+.recommend ul {
+  /* 除去標題與修改興趣的尺寸，父級剩餘尺寸都給ul*/
+  flex: 1;
+  display: flex;
+}
+
+.recommend ul li a {
+  padding: 0 24px;
+  border-right: 1px solid #aaa;
+  font-size: 18px;
+}
+
+.recommend ul li a:hover {
+  color: #00a4ff;
+}
+
+.recommend ul li:last-child a {
+  border-right: 0;
+}
+
+.recommend .modify {
+  font-size: 16px;
+  color: #00a4ff;
+}
+
+/* recommend end */
+
+/* 精品推薦課程 start */
+.corse {
+  margin-top: 15px;
+}
+
+/* 標題公共類，與其他區域共用 */
+.hd {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  line-height: 60px;
+}
+
+.hd h3 {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.hd .more {
+  font-size: 14px;
+  color: #999;
+}
+
+.hd .more span {
+  margin-left: 5px;
+}
+
+.hd a:hover {
+  color: #00a4ff;
+}
+
+/* 課程內容，與其他區域共用 */
+.bd ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bd li {
+  margin-bottom: 14px;
+  width: 228px;
+  height: 271px;
+  background-color: pink;
+}
+
+.bd li:hover {
+  box-shadow: 1px 2px 2px #666;
+  transition: all .3s;
+}
+
+.bd li .pic {
+  height: 156px;
+}
+
+.bd li .pic img {
+  height: 100%;
+}
+
+.bd li .text {
+  padding: 20px;
+  height: 115px;
+  background-color: #fff;
+}
+
+.bd li .text h4 {
+  height: 40px;
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.bd li .text p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+}
+
+.bd li .text p span {
+  color: #ff7c2d
+}
+
+.bd li .text p i {
+  font-style: normal;
+}
+
+/* 前端開發工程師 + 數據分析師 共用模板*/
+.hd ul {
+  display: flex;
+}
+
+.hd li {
+  margin-right: 60px;
+  font-size: 16px;
+}
+
+.hd li .active {
+  color: #00a4ff;
+}
+
+.bd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bd .left {
+  width: 228px;
+}
+
+.bd .left img {
+  display: block;
+}
+
+.bd .right {
+  width: 957px;
+}
+
+.bd .right .top {
+  margin-bottom: 15px;
+  height: 100px;
+}
+
+/* 版權 */
+.footer {
+  margin-top: 60px;
+  padding-top: 60px;
+  height: 273px;
+  background-color: #fff;
+}
+
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .left {
+  width: 440px;
+}
+
+.footer .left p {
+  margin-top: 24px;
+  margin-bottom: 14px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #666;
+}
+
+.footer .left .download {
+  display: block;
+  width: 120px;
+  height: 36px;
+  border: 1px solid #00a4ff;
+  line-height: 34px;
+  text-align: center;
+  font-size: 16px;
+  color: #00a4ff;
+}
+
+.footer .right {
+  display: flex;
+}
+
+.footer .right dl {
+  margin-left: 130px;
+
+}
+
+.footer .right dt {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.footer .right a {
+  font-size: 14px;
+  color: #666;
+  line-height: 23px;
+}
+
+.footer .right a:hover {
+  color: #00a4ff;
+}
