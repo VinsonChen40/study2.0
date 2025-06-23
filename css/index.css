@@ -319,12 +319,11 @@ body {
   margin-bottom: 14px;
   width: 228px;
   height: 271px;
-  background-color: pink;
+  transition: all .3s;
 }
 
 .bd li:hover {
-  box-shadow: 1px 2px 2px #666;
-  transition: all .3s;
+  box-shadow: 5px 6px 10px #666;
 }
 
 .bd li .pic {
@@ -334,6 +333,7 @@ body {
 .bd li .pic img {
   height: 100%;
 }
+
 
 .bd li .text {
   padding: 20px;
