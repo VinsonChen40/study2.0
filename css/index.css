@@ -126,6 +126,7 @@ body {
 
 /* banner start */
 .banner {
+  position: relative;
   height: 420px;
   background-image: url(../uploads/bannerC.jpg);
 }
@@ -170,6 +171,32 @@ body {
 .banner .left li:hover a,
 .banner .left li:hover span {
   color: #00a4ff;
+}
+
+/* 圓點 */
+.banner ol {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner ol li {
+  margin: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.banner ol .active {
+  background-color: #ff7c2d;
 }
 
 /* 課程表 */
